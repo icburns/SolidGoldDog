@@ -1,2 +1,5 @@
 SolidGoldClient/node_modules/
 SolidGoldServer/
+.idea/
+node_modules/
+dist/

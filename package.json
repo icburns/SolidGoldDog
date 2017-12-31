@@ -1,0 +1,17 @@
+{
+  "name": "solid-gold-server",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "@types/express": "^4.11.0",
+    "@types/node": "^8.5.2",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  }
+}
