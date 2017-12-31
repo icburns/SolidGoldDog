@@ -1,0 +1,14 @@
+{
+  "name": "solid-gold-dog",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.35",
+    "awesome-typescript-loader": "^3.4.1",
+    "source-map-loader": "^0.2.3",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  }
+}
