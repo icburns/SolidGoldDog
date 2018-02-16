@@ -11,10 +11,30 @@
 
         <div>
             <h1>Solid Gold Test</h1>
+            <form id='solidGoldForm' action="/solidGoldButton" method="post" name="solidGoldForm">
+                <input type="submit" name="solidGoldButton" value="Solid Gold Button">
+            </form>
         </div>
 
         <footer>
             <% include partials/footer %>
         </footer>
+
+        <script type="text/javascript">
+            var solidGoldForm = document.getElementById('solidGoldForm');
+            solidGoldForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                var solidGoldPost = new XMLHttpRequest();
+                solidGoldPost.onreadystatechange = function() {
+                    if (solidGoldPost.readyState == XMLHttpRequest.DONE) {
+                        console.log('solid gold sent');
+                    }
+                }
+                solidGoldPost.open('POST', '/solidGoldButton', true);
+                solidGoldPost.send(null);
+
+            }, false);
+        </script>
     </body>
 </html>

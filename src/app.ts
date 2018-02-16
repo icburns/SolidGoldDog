@@ -4,7 +4,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.engine('.ejs', ejs);
 
-app.get('/index', function(req, res) {
+app.get('/', function(req, res) {
     res.render('index');
 });
 
@@ -13,4 +13,10 @@ app.get('/about', function(req, res) {
         solidGoldVariable: 'solid gold info'
     });
 });
+
+app.post('/solidGoldButton', function(req, res) {
+    console.log('execute');
+    res.sendStatus(200);
+});
+
 app.listen(3000, () => console.log('Example app listening on port 3000!'));
