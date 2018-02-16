@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     entry: "./src/app.ts",
     target: 'node',
@@ -6,7 +8,11 @@ module.exports = {
     },
     resolve: {
         // Add '.ts' and '.tsx' as a resolvable extension.
-        extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+        extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"],
+        modules: [
+            path.resolve('src'),
+            'node_modules'
+        ]
     },
     module: {
         loaders: [
