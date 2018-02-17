@@ -1,0 +1,46 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background:
+            repeating-linear-gradient(16deg, rgba(184, 134, 11, .5), rgba(238, 232, 170, .5) 4px, rgba(184, 134, 11, .5) 8px),
+            repeating-linear-gradient(230deg, rgba(184, 134, 11, .5), rgba(238, 232, 170, .5) 4px, rgba(184, 134, 11, .5) 8px);
+}
+
+.solid-gold-header {
+    margin: auto;
+    text-align: center;
+    font-family: "Zilla Slab Highlight", monospace;
+    font-size: 4em;
+}
+
+.solid-gold-header > span {
+    margin: 12px;
+}
+
+#solidGoldForm {
+    text-align: center;
+    padding: 48px;
+}
+
+.solid-gold-button {
+    padding: 24px;
+    font-family: "Consolas", "Courier New",monospace;
+    background-color: black;
+    color: goldenrod;
+    border: solid black;
+    border-radius: 8px;
+}
+
+.solid-gold-button:focus {
+    outline: none;
+}
+
+.solid-gold-button:hover {
+    border: solid goldenrod;
+    background-color: rgba(0,0,0,.75);
+    cursor: pointer;
+}
+
